@@ -8,6 +8,7 @@ import ServicePricingList from "./pages/Service";
 import MasterBarber from "./pages/Barber";
 import Appointment from "./pages/Appointment";
 import LookBook from "./pages/LookBook";
+import Ritual from "./pages/Ritual";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       <Route path="/appointment/:barberId" element={<Appointment />} />
 <Route path="/lookbook" element={<LookBook />} />
           </Routes>
-
+<Route path="/ritual" element={<Ritual />} />
           <Footer />
         </BrowserRouter>
       </ErrorBoundary>
