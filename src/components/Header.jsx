@@ -96,7 +96,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/lookbook"
+                to="/barbers"
                 className="
                   flex
                   items-center

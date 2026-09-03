@@ -53,12 +53,10 @@ export default function MasterBarber({onSelectBarber}) {
           onClick={() => onSelectBarber(barber.id)}
           className="inline-flex items-center bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300"
         >
-          Select Barber
+          Select Barber {barber.name.split(" ")[0]}
         </button>
       </div>
     )}
-
-
     
   </div>
 ))}

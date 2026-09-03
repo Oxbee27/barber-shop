@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Footer from "./components/Footer";
 
 import ServicePricingList from "./pages/Service";
+import MasterBarber from "./pages/MasterBarber";
 
 function App() {
   return (
@@ -17,6 +18,15 @@ function App() {
             <Route path="/" element={<Hero />} />
 
             <Route path="/services" element={<ServicePricingList />} />
+            <Route path="/barbers" element={<MasterBarber onSelectBarber={(barberId) => 
+      {
+
+        console.log("selected barber:", barberId)
+
+      }
+
+
+            }  />} />
           </Routes>
 
           <Footer />
