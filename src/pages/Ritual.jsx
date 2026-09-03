@@ -21,7 +21,14 @@
            ))}
          </div>
 <div className="mt-12 text-center relative bg-[#0e0f14] border border-white/5 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 sm:p-12 p-8">
+<div className="grid grid-col-1 lg:grid-cols-2 gap-8 items-center mt-10 ">
 
+
+
+
+
+
+</div>
 
 
 
