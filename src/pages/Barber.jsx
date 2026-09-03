@@ -3,6 +3,23 @@ import {BARBERS} from "../components/data/barberData.js"
 
 export default function MasterBarber({onSelectBarber}) {  
   return (
+<section  id="barbers" className="">
+<div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</section>
 
 
 
@@ -15,5 +32,6 @@ export default function MasterBarber({onSelectBarber}) {
 
 
 
-    
   )
+
+  }
