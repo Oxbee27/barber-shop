@@ -114,7 +114,7 @@ function Header() {
 
             <li>
               <Link
-                to="/"
+                to="/ritual"
                 className="
                   flex
                   items-center
@@ -132,7 +132,7 @@ function Header() {
 
             <li>
               <Link
-                to="/"
+                to="/contact"
                 className="
                   flex
                   items-center
@@ -241,7 +241,7 @@ function Header() {
 
                     <li>
                       <Link
-                        to="/"
+                        to="/ritual"
                         className="
                   flex
                   items-center
@@ -259,7 +259,7 @@ function Header() {
 
                     <li>
                       <Link
-                        to="/"
+                        to="/contact"
                         className="
                   flex
                   items-center

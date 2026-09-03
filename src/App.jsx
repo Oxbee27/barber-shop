@@ -9,8 +9,10 @@ import MasterBarber from "./pages/Barber";
 import Appointment from "./pages/Appointment";
 import LookBook from "./pages/LookBook";
 import Ritual from "./pages/Ritual";
+import Contact from "./pages/Contact";
 
 function App() {
+  
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
       <ErrorBoundary>
@@ -23,7 +25,6 @@ function App() {
             <Route path="/services" element={<ServicePricingList />} />
             <Route path="/barbers" element={<MasterBarber onSelectBarber={(barberId) => 
       {
-
               console.log("selected barber:", barberId)
             navigate(`/appointment/${barberId}`)
       }
@@ -32,8 +33,10 @@ function App() {
 
       <Route path="/appointment/:barberId" element={<Appointment />} />
 <Route path="/lookbook" element={<LookBook />} />
-          </Routes>
 <Route path="/ritual" element={<Ritual />} />
+<Route path="/contact" element={<Contact />} />
+
+          </Routes>
           <Footer />
         </BrowserRouter>
       </ErrorBoundary>
