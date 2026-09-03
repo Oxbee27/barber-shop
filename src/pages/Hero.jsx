@@ -46,7 +46,7 @@ function Hero() {
               Reserve Appointment
             </button>
           
-            < Link to="/services"
+            <Link to="/services"
             className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300 flex gap-2">
               view services 
               <FaChevronRight className="ml-2 mt-2" />

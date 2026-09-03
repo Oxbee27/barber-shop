@@ -1,16 +1,17 @@
  import {SERVICES, ADD_ONS} from '../components/data/barberData.js'
 import  React from 'react'
+import {Link} from 'react-router-dom'
 import { FaChevronRight } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+
 import {useState} from "react"
 
 export default function ServicePricingList({onSelectService}) {
-    const [activecategory, setactivecategory] = useState('service')
+    const [activecategory, setactivecategory] = useState('services')
     const handleCategoryChange = (category) => {
         setactivecategory(category)
     }
 
- const items = activecategory === 'service' ? SERVICES : ADD_ONS
+ const items = activecategory === 'services' ? SERVICES : ADD_ONS
 
   return (
     <div id='services' className="bg-black text-white py-20">
@@ -47,13 +48,11 @@ export default function ServicePricingList({onSelectService}) {
 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 {items.map((item) => (
     <div key={item.id} className="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-        <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-md mb-4" />
-        <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+        <img src={item.image} alt={item.name} className="w-full h-48 object-cover rounded-md mb-4" />
+        <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
         <p className="text-gray-400 mb-4">{item.description}</p>
         <p className="text-lg font-bold text-[#d4af37]">${item.price}</p>
-    </div>
-))}
-{onSelectService && (
+        {onSelectService && (
     <div className="mt-12 text-center">
         <button
             onClick={() => onSelectService(item.id)}
@@ -63,12 +62,16 @@ export default function ServicePricingList({onSelectService}) {
 </div>
 
 )}
+    </div>
+))}
+
              
         </div>
         <div className="mt-12 text-center">
-          <Link to="/pricing" className="inline-flex items-center bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
-            hide service and  Price Menu
-            <FaChevronRight className="ml-2" />
+          <Link to="/"
+          className="inline-flex items-center bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
+          Back to Home Page
+<FaChevronRight className="ml-2" />
           </Link>
         </div>
       </div>
