@@ -21,8 +21,29 @@
            ))}
          </div>
 <div className="mt-12 text-center relative bg-[#0e0f14] border border-white/5 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 sm:p-12 p-8">
-<div className="grid grid-col-1 lg:grid-cols-2 gap-8 items-center mt-10 ">
+<div className="grid grid-col-1 lg:grid-cols-12 gap-8 items-center mt-10 ">
+<div className="lg:col-span-6">
+<span className="text-sm font-bold mb-4 text-[#d4af37]">
+private mayfair santuary
 
+</span>
+
+<h3>
+
+designed for calm, <br />
+<span className="text-[#d4af37]"> privacy & distinction </span>
+
+
+</h3>
+
+<p className="text-sm text-[#a2a4b0] leading-6">
+                Step away from urban noise into our acoustic-treated private
+                lounge. Relax in custom Japanese Belmont leather chairs with
+                bespoke brass fixtures and an artisan spirits bar.
+              </p>
+
+
+</div>
 
 
 
