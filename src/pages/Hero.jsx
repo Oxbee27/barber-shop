@@ -42,9 +42,9 @@ function Hero() {
       </div>
 </div>
 <div className=" text-center flex justify-center  capitalize sm:text-2xl md:text-2xl lg:text-lg font-bold text-white  gap-5 mt-10">
-            <button className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
+            <Link to="/barbers" className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
               Reserve Appointment
-            </button>
+            </Link>
           
             <Link to="/services"
             className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300 flex gap-2">

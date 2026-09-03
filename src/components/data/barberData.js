@@ -2,9 +2,11 @@
 export const barberData = {
   hero: "/barber-hero.jpg",
   interior: "/barber-interior.jpg",
-  beard: "/beard-sculpt.jpg",
+  beard: "/haircut5.jpg",
   master: "/master-barber.jpg",
-  fadeStyle: "/fade-style.jpg",
+  fadeStyle: "/haircut2.jpg",
+  atmosphere: "/atmosphere.jpeg"
+
 };
 
 export const SERVICES = [
@@ -299,7 +301,7 @@ export const LOOKBOOK_ITEMS = [
     barber: "OXBEE Barber Shop",
     description:
       "Bespoke leather barber chairs, dark charcoal architectural walls, brushed brass trims, and VIP refreshments.",
-    image: barberData.interior,
+    image: barberData.atmosphere,
     tag: "Shop",
   },
 ];
