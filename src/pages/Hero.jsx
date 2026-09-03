@@ -1,4 +1,4 @@
-import { barberData } from "./data/barberData.js";
+
 import { FaChevronRight } from "react-icons/fa";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ function Hero() {
     "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 relative gap-6 sm:gap-8 lg:gap-10">
-        <div className="lg:col-span-6 pt-32 sm:mt-10 relative sm:pt-124 lg:pt-12 justify-center items-center">
+        <div className="lg:col-span-6 pt-32 sm:mt-10 relative sm:pt-[124px] lg:pt-12 justify-center items-center">
           <h1 className="text-5xl text-center capitalize sm:text-4xl md:text-5xl lg:text-6xl font-bold italic  text-[#d4af37] font-inter ">
             Bigwig barber studio
           </h1>
@@ -35,7 +35,7 @@ function Hero() {
       </div>
       <div className=" w-full lg:block bg-[url('/barber-interior.jpg')] bg-cover bg-center h-[400px] sm:h-[400px] md:h-[450px] lg:h-[500px] bg-white">
         <img
-          src="barber-hero.jpg"
+          src="/barber-hero.jpg"
           alt="hero-image"
           className="w-full h-[400px] sm:h-[400px] md:h-[450px] lg:h-[250px] object-cover "
        />
@@ -45,10 +45,12 @@ function Hero() {
             <button className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
               Reserve Appointment
             </button>
-            <button className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300 flex gap-2">
-              view price menu
+          
+            < Link to="/services"
+            className="bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300 flex gap-2">
+              view services 
               <FaChevronRight className="ml-2 mt-2" />
-            </button>
+            </Link>
             </div>
 
       <div className=" text-center capitalize sm:text-4xl md:text-5xl lg:text-xl font-bold text-white ">

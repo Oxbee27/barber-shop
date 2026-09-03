@@ -1,16 +1,19 @@
- import {SERVICES, ADD_ONS} from './data/barberData.js'
-import  react from 'react'
+ import {SERVICES, ADD_ONS} from '../components/data/barberData.js'
+import  React from 'react'
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import {useState} from "react"
 
-export default function serviceprincingList({onSelectService}) {
+export default function ServicePricingList({onSelectService}) {
     const [activecategory, setactivecategory] = useState('service')
     const handleCategoryChange = (category) => {
         setactivecategory(category)
-        const items = activecategory === 'service' ? SERVICES : ADD_ONS
     }
+
+ const items = activecategory === 'service' ? SERVICES : ADD_ONS
+
   return (
-    <div className="bg-black text-white py-20">
+    <div id='services' className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-8 text-center">Service and Pricing</h2>
 <div>
@@ -41,7 +44,6 @@ export default function serviceprincingList({onSelectService}) {
 
 </div>
 
-
 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 {items.map((item) => (
     <div key={item.id} className="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -51,33 +53,21 @@ export default function serviceprincingList({onSelectService}) {
         <p className="text-lg font-bold text-[#d4af37]">${item.price}</p>
     </div>
 ))}
-{onselectService &&}
-
+{onSelectService && (
+    <div className="mt-12 text-center">
+        <button
+            onClick={() => onSelectService(item.id)}
+            className="inline-flex items-center bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300" >
+            Select Service
+            </button>
 </div>
 
-
-
-
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-
-
-
-
-          {SERVICES.map((item) => (
-            <div key={item.id} className="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-md mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-400 mb-4">{item.description}</p>
-              <p className="text-lg font-bold text-[#d4af37]">${item.price}</p>
-            </div>
-          ))}
+)}
+             
         </div>
         <div className="mt-12 text-center">
           <Link to="/pricing" className="inline-flex items-center bg-[#d4af37] text-black py-2 px-4 rounded-md hover:bg-[#c09e2d] transition duration-300">
-            View Full Price Menu
+            hide service and  Price Menu
             <FaChevronRight className="ml-2" />
           </Link>
         </div>
@@ -86,22 +76,4 @@ export default function serviceprincingList({onSelectService}) {
   );
 }  
 
-function ADD_ONS() {
-  return (
-    <div className="bg-black text-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-8 text-center">Adds-On</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ADD-ONS.map((item) => (
-            <div key={item.id} className="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-md mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-400 mb-4">{item.description}</p>
-              <p className="text-lg font-bold text-[#d4af37]">${item.price}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+     

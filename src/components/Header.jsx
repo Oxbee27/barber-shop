@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FaSearch, FaLock, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import React from "react";
 
 function Header() {
   const [search, setSearch] = useState("");
@@ -76,7 +77,7 @@ function Header() {
           >
             <li>
               <Link
-                to="/"
+                to="/services"
                 className="
       relative
       flex

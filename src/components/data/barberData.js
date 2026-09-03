@@ -1,5 +1,4 @@
 
-
 export const barberData = {
   hero: "/barber-hero.jpg",
   interior: "/barber-interior.jpg",
@@ -15,14 +14,18 @@ export const SERVICES = [
     category: "cuts",
     price: 75,
     duration: "45 mins",
+    image: "/haircut1.jpg",
+
     description:
       "Precision clipper sculpting, razor-sharp hairline edge-up, custom taper fade, finished with cooling tea-tree wash and botanical scalp oil.",
+
     highlights: [
       "Bespoke Consultation",
       "Botanical Scalp Wash",
       "Razor Sharp Edge-Up",
       "Matte Sheen Finish",
     ],
+
     popular: true,
     tag: "Client Favorite",
   },
@@ -33,14 +36,18 @@ export const SERVICES = [
     category: "cuts",
     price: 85,
     duration: "50 mins",
+    image: "/haircut2.jpg",
+
     description:
       "Seamless low, mid, or high fade down to skin with foil shaver precision, 360 wave enhancement or textured crown sculpting.",
+
     highlights: [
       "Micro-Foil Shaver Finish",
       "Wave / Texture Sculpting",
       "Bevel Blade Outlining",
       "Hot Towel Scalp Reset",
     ],
+
     popular: false,
     tag: "Precision Fit",
   },
@@ -51,14 +58,18 @@ export const SERVICES = [
     category: "beard",
     price: 60,
     duration: "40 mins",
+    image: "/haircut3.jpg",
+
     description:
       "Freehand beard architecture, sharp cheekline razor detailing, double eucalyptus steam towels, and organic shea & cedarwood oil massage.",
+
     highlights: [
       "Eucalyptus Steam Infusion",
       "Straight Razor Cheek Geometry",
       "Length Balancing",
       "Organic Shea Butter & Balm",
     ],
+
     popular: true,
     tag: "Signature Ritual",
   },
@@ -69,14 +80,18 @@ export const SERVICES = [
     category: "vip",
     price: 165,
     duration: "90 mins",
+    image: "/haircut4.jpg",
+
     description:
       "Our flagship complete grooming immersion. Signature haircut, full beard sculpt, volcanic mud pore cleanse, and relaxing neck & shoulder massage.",
+
     highlights: [
       "Haircut & Beard Sculpt",
       "Volcanic Clay Facial Mask",
       "3-Stage Essential Oil Towels",
       "Artisan Refreshment & VIP Suite",
     ],
+
     popular: true,
     tag: "Ultimate Luxury",
   },
@@ -87,14 +102,18 @@ export const SERVICES = [
     category: "beard",
     price: 65,
     duration: "45 mins",
+    image: "/haircut5.jpg",
+
     description:
       "Old-world Japanese straight razor shave with warm badger-hair brush lather, pre-shave sandalwood balm, and witch hazel tonic.",
+
     highlights: [
       "Pre-Shave Sandalwood Oil",
       "Badger Brush Warm Lather",
       "Double Pass Blade Technique",
       "Cold Towel Pore Close",
     ],
+
     popular: false,
     tag: "Classic Art",
   },
@@ -105,14 +124,18 @@ export const SERVICES = [
     category: "cuts",
     price: 70,
     duration: "35 mins",
+    image: "/haircut6.jpg",
+
     description:
       "Subtle, ammonia-free natural tone restoration and crisp beard density enhancement without looking artificial.",
+
     highlights: [
       "10-Min Fast Application",
       "Zero Brass Fade-out",
       "Natural Matte Luster",
       "Scalp Barrier Treatment",
     ],
+
     popular: false,
     tag: "Natural Youth",
   },
@@ -123,14 +146,18 @@ export const SERVICES = [
     category: "rituals",
     price: 55,
     duration: "30 mins",
+    image: "/haircut7.jpg",
+
     description:
       "Deep follicle clarifying scrub with active charcoal micro-beads, high-frequency ozone comb, and invigorating peppermint mask.",
+
     highlights: [
       "Active Charcoal Exfoliation",
       "High-Frequency Comb Stimulation",
       "Peppermint Cooling Mask",
       "Tension Release Massage",
     ],
+
     popular: false,
     tag: "Revitalization",
   },
@@ -141,19 +168,22 @@ export const SERVICES = [
     category: "vip",
     price: 130,
     duration: "75 mins",
+    image: "/haircut8.jpg",
+
     description:
       "Two simultaneous or consecutive bespoke haircut sessions with artisan refreshments in our private gentleman lounge.",
+
     highlights: [
       "Side-by-Side Booking Available",
       "Custom Styling for Both",
       "Complimentary Beverages",
       "VIP Suite Access",
     ],
+
     popular: false,
     tag: "Generational",
   },
 ];
-
 
 
 export const ADD_ONS = [
