@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import {  FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import React from "react";
 
 function Header() {
- 
   const [menuOpen, setMenuOpen] = useState(false);
-  
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0c0d10] py-4 px-4 sm:px-6 md:px-10 lg:px-16">
@@ -15,7 +13,7 @@ function Header() {
           <Link
             to="/"
             className="flex items-center gap-2"
-             onClick={() => setMenuOpen(false)}
+            onClick={() => setMenuOpen(false)}
           >
             <img
               src="/Gemini_Generated_Image_2f98w2f98w2f98w2.jpeg"
@@ -45,8 +43,7 @@ function Header() {
             </p>
           </Link>
         </div>
-
-        <nav className=" hidden md:block w-full md:w-auto">
+        <nav className="hidden md:block w-full md:w-auto">
           <ul
             className="
             flex
@@ -188,14 +185,7 @@ function Header() {
                     <li>
                       <Link
                         to="/services"
-                        className="
-      relative
-      flex
-      items-center
-      justify-center
-      p-2
-      rounded-lg
-      hover:text-[#d4af37]/30
+                        className=" relative flex items-center justify-center p-2 rounded-lg hover:text-[#d4af37]/30
                   text-[#d4af37]
                   capitalize
     "

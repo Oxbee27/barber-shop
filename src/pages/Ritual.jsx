@@ -27,7 +27,7 @@ export default function Ritual() {
             return (
             <div
               key={step.step}
-              className="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 mb-4"
+              className="bg-neutral-900 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 mb-4"
             >
               <h3 className="text-xl font-semibold mb-2">
                 {step.step}. {step.title}
@@ -36,7 +36,7 @@ export default function Ritual() {
             </div>
           )})}
         </div>
-        <div className="mt-12 text-center relative bg-[#0e0f14] border border-white/5 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 sm:p-12 p-8">
+        <div className="mt-12 text-center relative bg-[#0e0f14] border border-white/5 rounded-lg p-6 hover:shadow-lg duration-300 sm:p-12 p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-10 ">
             <div className="lg:col-span-6">
               <span className="text-sm font-bold mb-4 text-[#d4af37]">
@@ -70,7 +70,7 @@ export default function Ritual() {
               </div>
 
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#1a1c24] border border-white/5">
-                <FaCoffee className="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5" />
+                <FaCoffee className="w-5 h-5 text-[#d4af37] flex mt-0.5" />
 
                 <div>
                   <h4 className="text-xs font-bold text-white">
@@ -84,7 +84,7 @@ export default function Ritual() {
               </div>
 
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#1a1c24] border border-white/5">
-                <FaWind className="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5" />
+                <FaWind className="w-5 h-5 text-[#d4af37] flex mt-1" />
 
                 <div>
                   <h4 className="text-xs font-bold text-white">
